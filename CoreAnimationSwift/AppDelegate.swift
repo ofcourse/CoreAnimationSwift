@@ -12,9 +12,14 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    //https://www.raywenderlich.com/tag/core-animation
+    //http://www.cocoachina.com/ios/20160517/16290.html
   //iOS开发tips-UITableView、UICollectionView行高/尺寸自适应 http://www.cnblogs.com/kenshincui/p/6391312.html
   //iOS开发系列--让你的应用“动”起来 http://www.cnblogs.com/kenshincui/p/3972100.html#!comments
   //Core Animation Programming Guide  https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CoreAnimationBasics/CoreAnimationBasics.html
+   //https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/TheBasics.html#//apple_ref/doc/uid/TP40014097-CH5-ID309
+    //swift http://www.cnblogs.com/kenshincui/p/4717450.html  http://www.cnblogs.com/kenshincui/p/4824810.html
+    //https://swift.org/
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
