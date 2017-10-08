@@ -3,7 +3,7 @@
 //  CoreAnimationSwiftUITests
 //
 //  Created by user on 2017/10/8.
-//  Copyright © 2017年 com.zhiding8. All rights reserved.
+//  Copyright © 2017年  All rights reserved.
 //
 
 import XCTest
