@@ -12,8 +12,9 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+  //iOS开发tips-UITableView、UICollectionView行高/尺寸自适应 http://www.cnblogs.com/kenshincui/p/6391312.html
+  //iOS开发系列--让你的应用“动”起来 http://www.cnblogs.com/kenshincui/p/3972100.html#!comments
+  //Core Animation Programming Guide  https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide/CoreAnimationBasics/CoreAnimationBasics.html
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         return true
