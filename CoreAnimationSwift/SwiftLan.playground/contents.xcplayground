@@ -7,5 +7,14 @@
         <page name='var'/>
         <page name='basics'/>
         <page name='basicOperators'/>
+        <page name='string'/>
+        <page name='collection'/>
+        <page name='control_flow'/>
+        <page name='function'/>
+        <page name='closures'/>
+        <page name='enum'/>
+        <page name='struct_class'/>
+        <page name='error_handling'/>
+        <page name='access_control'/>
     </pages>
 </playground>
