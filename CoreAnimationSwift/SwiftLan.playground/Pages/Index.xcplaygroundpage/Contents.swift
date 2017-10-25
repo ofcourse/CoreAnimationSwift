@@ -13,10 +13,14 @@
  1. [枚举](enum)
  1. [结构体&类](struct_class)
  1. [错误处理](error_handling)
+ 1. [类型转换](type_casting)
+ 1. [嵌套类型](nested_types)
+ 1. [扩展](extenstions)
+ 1. [协议](protocols)
+ 1. [泛型](generics)
+ 
  more information:
- 
- [Using Swift with Cocoa and Objective-C (Swift 4): Basic Setup](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-ID0)
- 
  [The Swift Programming Language (Swift 4)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)
+  [Using Swift with Cocoa and Objective-C (Swift 4): Basic Setup](https://developer.apple.com/library/content/documentation/Swift/Conceptual/BuildingCocoaApps/index.html#//apple_ref/doc/uid/TP40014216-CH2-ID0)
 */
 //: [Next](@next)

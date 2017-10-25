@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='raw' executeOnSourceChanges='false'>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='false'>
     <pages>
         <page name='Index'/>
         <page name='aboutSwift'/>
@@ -16,5 +16,10 @@
         <page name='struct_class'/>
         <page name='error_handling'/>
         <page name='access_control'/>
+        <page name='type_casting'/>
+        <page name='nested_types'/>
+        <page name='extensions'/>
+        <page name='protocols'/>
+        <page name='generics'/>
     </pages>
 </playground>

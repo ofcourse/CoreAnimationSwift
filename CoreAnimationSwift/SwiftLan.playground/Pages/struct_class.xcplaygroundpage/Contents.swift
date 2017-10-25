@@ -171,9 +171,12 @@ print(matrix)
 class ClassA {
     let numA: Int
     let numB: Int
+static var numC: Int { get set }
     init(num: Int) {
         numA = num
         numB = numA //error: return from initializer without initializing all stored properties
+        //numC = numA
+        ClassA.numC = numA
     }
 }
 var cA = ClassA(num:1)

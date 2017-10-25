@@ -1,7 +1,7 @@
 //: [Previous](@previous)
 /*:
  # 基础数据类型
- Int,Double,Float,Bool,String,集合类型：Array,Set,Dictionary;元组,Optional Type,
+ Int,Double,Float,Bool,String,集合类型：Array,Set,Dictionary;元组,Optional Type
  */
 import Foundation
 
