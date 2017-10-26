@@ -11,7 +11,8 @@ let cat = "🐱"; print(cat) //分号
 /*:
  ----
  ## 整型
- Int/UInt
+ UInt8/Int8  UInt16/Int16 Int32/UInt32  Int64/UInt64
+ Int/UInt 大部分情况下用Int/UInt就可以了
  On a 32-bit platform, Int is the same size as Int32/UInt32.
  On a 64-bit platform, Int is the same size as Int64/UInt64.
  
@@ -30,13 +31,13 @@ let cat = "🐱"; print(cat) //分号
  ## 数字字面量
    十字制，二进制0b，八进制0o，十六进制0x
  */
-let decimalInteger = 17           //十进制
-let binaryInteger = 0b10001       // 17 in binary notation
-let octalInteger = 0o21           // 17 in octal notation
-let hexadecimalInteger = 0x11     // 17 in hexadecimal notation
+let decimalInteger = 17           // 17 十进制
+let binaryInteger = 0b10001       // 17 二进制0b
+let octalInteger = 0o21           // 17 八进制0o
+let hexadecimalInteger = 0x11     // 17 十六进制0x
 /*:
  ----
- ## 类型转换
+ ## 类型转换(需强制类型转换)
 */
 let three = 3
 let pointOneFourOneFiveNine = 0.14159
@@ -47,9 +48,11 @@ let pi = Double(three) + pointOneFourOneFiveNine
 */
 typealias AudioSample = UInt16
 var maxAmplitudeFound = AudioSample.min
+print(UInt16.min)
+print(maxAmplitudeFound)
 /*:
  ----
- ## Bool (true,false)
+ ## 布尔类型Bool
  Bool 类型只能是 true,false两种值，不能像c/oc那样允许非0值为true, if i {} 会报错
  */
 /*:

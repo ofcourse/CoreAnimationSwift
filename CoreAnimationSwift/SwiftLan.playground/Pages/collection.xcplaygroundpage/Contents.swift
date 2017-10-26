@@ -1,6 +1,6 @@
 //: [Previous](@previous)
 /*:
- # 集合
+ # 集合(值类型）
  * Array 有序列表
  * Set  无序列表(元素不重复）
  * Dictionary 字典

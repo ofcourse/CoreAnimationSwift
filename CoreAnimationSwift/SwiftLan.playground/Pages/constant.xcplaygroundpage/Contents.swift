@@ -11,7 +11,7 @@ import Foundation
 
 let appWidth: Int = 640
 let appHeight = 300
-let appScreen:Int ;
+let appScreen:Int
 appScreen = 200
 //error appHeight= 200
 //: [Next](@next)

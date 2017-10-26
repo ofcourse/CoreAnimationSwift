@@ -24,9 +24,19 @@ These are the same.
 """
 print(multilineString)
 
+for character in "Dog!🐶" {
+    print(character)
+}
+
 var a : Int = 10
 var b = a
 a = 20
 print(a)
 print(b)
+
+let dogString = "Dog‼🐶"
+for scalar in dogString.unicodeScalars {
+    print("\(scalar.value) ", terminator: "")
+}
+print("")
 //: [Next](@next)

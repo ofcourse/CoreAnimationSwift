@@ -15,6 +15,7 @@
  */
 /*:
  ## 复合赋值操作符
+ +=  -=  *= /= %=
  */
 import Foundation
 var a = 1
@@ -37,7 +38,7 @@ a += 2
  ## 范围操作符
  * 闭合范围操作符  ...
  * 半闭合范围操作符 ..
- * 一边范围操作符 如 [...2]
+ * 边界范围操作符 如 [...2]
  */
 for index in 1...5 {
     print("\(index) times 5 is \(index * 5)")
@@ -71,7 +72,7 @@ for name in names[..<2] {
 /*:
  ----
  ## 位操作符
- * 与& 或| 非~ 异或^
+ * 与& 或| 非~ 异或^  ,左移<<，右移>> 补0
  */
 let someBits: UInt8 = 0b10110010
 let moreBits: UInt8 = 0b01011110
@@ -79,15 +80,19 @@ let combinedbits = someBits | moreBits  // equals 11111110
 /*:
  ----
  ## 溢出操作符
- [more AdvancedOperators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html)
+ 溢出默认报错，用溢出操作符 防止报错 [more AdvancedOperators](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/AdvancedOperators.html)
  * Overflow addition (&+)
  * Overflow subtraction (&-)
  * Overflow multiplication (&*)
  */
 var potentialOverflow = Int16.max
 // potentialOverflow equals 32767, which is the maximum value an Int16 can hold
-potentialOverflow += 1
+//potentialOverflow += 1
 // this causes an error
+potentialOverflow =  potentialOverflow &+ 10
+var unsignedOverflow = UInt8.max
+unsignedOverflow = unsignedOverflow &+ 2
+
 /*:
  ----
  ## 方法操作符（结构体，类的操作符重载）
@@ -138,5 +143,7 @@ let plusMinusVector = firstVector +- secondVector
 // plusMinusVector is a Vector2D instance with values of (4.0, -2.0)
 // toBeDoubled now has values of (2.0, 8.0)
 // afterDoubling also has values of (2.0, 8.0)
-
+/*:
+ ## 操作符优先级 （）
+ */
 //: [Next](@next)
