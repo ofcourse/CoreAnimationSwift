@@ -15,9 +15,10 @@
  1. [错误处理](error_handling)
  1. [类型转换](type_casting)
  1. [嵌套类型](nested_types)
- 1. [扩展](extenstions)
+ 1. [扩展](extensions)
  1. [协议](protocols)
  1. [泛型](generics)
+ 1. [ARC](arc)
  
  more information:
  [The Swift Programming Language (Swift 4)](https://developer.apple.com/library/content/documentation/Swift/Conceptual/Swift_Programming_Language/Protocols.html#//apple_ref/doc/uid/TP40014097-CH25-ID267)

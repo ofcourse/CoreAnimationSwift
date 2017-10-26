@@ -21,5 +21,6 @@
         <page name='extensions'/>
         <page name='protocols'/>
         <page name='generics'/>
+        <page name='arc'/>
     </pages>
 </playground>
