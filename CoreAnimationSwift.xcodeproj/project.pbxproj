@@ -45,6 +45,7 @@
 		5DA5804B1F8F548A0098C1B0 /* KCImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCImage.swift; sourceTree = "<group>"; };
 		5DE768E01F9D855E00B8EB00 /* SwiftLan.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLan.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5DE768E11F9D858700B8EB00 /* SWIFTREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SWIFTREADME.md; sourceTree = "<group>"; };
+		5DFDEA4D1FA347E00085F6EC /* SwiftOC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftOC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		CEC94F351F89CABF00C942D9 /* CoreAnimationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC94F381F89CABF00C942D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC94F3A1F89CABF00C942D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +109,7 @@
 		CEC94F371F89CABF00C942D9 /* CoreAnimationSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5DFDEA4D1FA347E00085F6EC /* SwiftOC.playground */,
 				5DE768E01F9D855E00B8EB00 /* SwiftLan.playground */,
 				5DA580491F8F3E870098C1B0 /* Icon180.png */,
 				CEC94F381F89CABF00C942D9 /* AppDelegate.swift */,
