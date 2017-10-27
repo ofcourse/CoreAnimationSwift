@@ -12,7 +12,7 @@ Assignment and Copy Behavior for Strings, Arrays, and Dictionaries
 */
 /*:
  ----
- ## Stored Properties
+ ## 存储属性
  */
 import Foundation
 
@@ -22,7 +22,11 @@ struct FixedLengthRange {
 }
 var rangeOfThreeItems = FixedLengthRange(firstValue: 0, length: 3)
 rangeOfThreeItems.firstValue = 6
-//Lazy Stored Properties
+/*:
+ ----
+ ## 延迟加载存储属性
+ 只有在第一次使用时，才会初始化
+ */
 class DataImporter {
 }
 class DataManager {
@@ -32,7 +36,7 @@ class DataManager {
 }
 /*:
  ----
- ## Stored Properties and Instance Variables
+ ## 计算属性
  
  > If you have experience with Objective-C, you may know that it provides two ways to store values and references as part of a class instance. In addition to properties, you can use instance variables as a backing store for the values stored in a property.
  Swift unifies these concepts into a single property declaration. A Swift property does not have a corresponding instance variable, and the backing store for a property is not accessed directly. This approach avoids confusion about how the value is accessed in different contexts and simplifies the property’s declaration into a single, definitive statement. All information about the property—including its name, type, and memory management characteristics—is defined in a single location as part of the type’s definition.
@@ -66,7 +70,7 @@ struct Rect {
 }
 /*:
  ----
- ## Read-Only Computed Properties
+ ## 只读计算属性
  */
 struct Cuboid {
     var width = 0.0, height = 0.0, depth = 0.0
