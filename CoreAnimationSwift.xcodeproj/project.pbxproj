@@ -12,6 +12,7 @@
 		5DA5804A1F8F42900098C1B0 /* Icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA580491F8F3E870098C1B0 /* Icon180.png */; };
 		5DA5804C1F8F548A0098C1B0 /* KCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5804B1F8F548A0098C1B0 /* KCImage.swift */; };
 		5DE768E21F9D858700B8EB00 /* SWIFTREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DE768E11F9D858700B8EB00 /* SWIFTREADME.md */; };
+		5DFDEA521FA6F5EA0085F6EC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDEA511FA6F5EA0085F6EC /* Person.m */; };
 		CEC94F391F89CABF00C942D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC94F381F89CABF00C942D9 /* AppDelegate.swift */; };
 		CEC94F3B1F89CABF00C942D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC94F3A1F89CABF00C942D9 /* ViewController.swift */; };
 		CEC94F3E1F89CABF00C942D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC94F3C1F89CABF00C942D9 /* Main.storyboard */; };
@@ -46,6 +47,9 @@
 		5DE768E01F9D855E00B8EB00 /* SwiftLan.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftLan.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5DE768E11F9D858700B8EB00 /* SWIFTREADME.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = SWIFTREADME.md; sourceTree = "<group>"; };
 		5DFDEA4D1FA347E00085F6EC /* SwiftOC.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = SwiftOC.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5DFDEA4F1FA6F5EA0085F6EC /* CoreAnimationSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreAnimationSwift-Bridging-Header.h"; sourceTree = "<group>"; };
+		5DFDEA501FA6F5EA0085F6EC /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		5DFDEA511FA6F5EA0085F6EC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		CEC94F351F89CABF00C942D9 /* CoreAnimationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC94F381F89CABF00C942D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC94F3A1F89CABF00C942D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +90,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5DFDEA4E1FA6F5C80085F6EC /* OC */ = {
+			isa = PBXGroup;
+			children = (
+				5DFDEA501FA6F5EA0085F6EC /* Person.h */,
+				5DFDEA511FA6F5EA0085F6EC /* Person.m */,
+				5DFDEA4F1FA6F5EA0085F6EC /* CoreAnimationSwift-Bridging-Header.h */,
+			);
+			path = OC;
+			sourceTree = "<group>";
+		};
 		CEC94F2C1F89CABF00C942D9 = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +123,7 @@
 		CEC94F371F89CABF00C942D9 /* CoreAnimationSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5DFDEA4E1FA6F5C80085F6EC /* OC */,
 				5DFDEA4D1FA347E00085F6EC /* SwiftOC.playground */,
 				5DE768E01F9D855E00B8EB00 /* SwiftLan.playground */,
 				5DA580491F8F3E870098C1B0 /* Icon180.png */,
@@ -212,6 +227,7 @@
 				TargetAttributes = {
 					CEC94F341F89CABF00C942D9 = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					CEC94F481F89CAC100C942D9 = {
@@ -280,6 +296,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5DFDEA521FA6F5EA0085F6EC /* Person.m in Sources */,
 				5DA5804C1F8F548A0098C1B0 /* KCImage.swift in Sources */,
 				CEC94F3B1F89CABF00C942D9 /* ViewController.swift in Sources */,
 				CEC94F391F89CABF00C942D9 /* AppDelegate.swift in Sources */,
@@ -450,12 +467,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44JV8K575P;
 				INFOPLIST_FILE = CoreAnimationSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zd.CoreAnimationSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimationSwift/OC/CoreAnimationSwift-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -465,12 +485,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 44JV8K575P;
 				INFOPLIST_FILE = CoreAnimationSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = zd.CoreAnimationSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CoreAnimationSwift/OC/CoreAnimationSwift-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

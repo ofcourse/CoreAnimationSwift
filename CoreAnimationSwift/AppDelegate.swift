@@ -22,6 +22,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     //https://swift.org/
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Person.sayHi() //swift 引用oc代码
+        
         return true
     }
 
