@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import RxSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,8 +25,93 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         
         Person.sayHi() //swift 引用oc代码
-        
+        t()
         return true
+    }
+    
+    func t() {
+        //RxSwift - 为什么存在 catchError https://segmentfault.com/p/1210000008635488/read
+        let disposeBag:DisposeBag = DisposeBag()
+        
+        Observable<Int>.from([1, 2, 3, -1, 5])
+            .map { value -> Int in
+                if value > 0 {
+                    return value
+                } else {
+                    //throw CustomError.myCustom
+                    print("error")
+                    throw MyCustomeError.C
+                }
+            }
+            .debug()
+            .subscribe()
+            .disposed(by: disposeBag)
+        
+        Observable<Int>.from([1, 2, 3, -1, 5])
+            .map { value -> Int in
+                if value > 0 {
+                    return value
+                } else {
+                    throw MyCustomeError.C
+                }
+            }
+            .catchError { (error) -> Observable<Int> in
+                return Observable.just(1)
+            }
+            .debug()
+            .subscribe()
+            .disposed(by: disposeBag)
+        
+        Observable<Int>.from([1, 2, 3, -1, 5])
+            .flatMap { value -> Observable<Int> in
+                Observable.just(value)
+                    .map { value -> Int in
+                        if value > 0 {
+                            return value
+                        } else {
+                            throw MyCustomeError.C
+                        }
+                    }
+                    .catchError { (error) -> Observable<Int> in
+                        return Observable.empty()
+                }
+            }
+            .debug()
+            .subscribe()
+            .disposed(by: disposeBag)
+        
+        Observable<Int>.from([1, 2, 3, -1, 5])
+            .flatMap { value -> Observable<Int> in
+                Observable.just(value)
+                    .map { value -> Int in
+                        if value > 0 {
+                            return value
+                        } else {
+                            throw MyCustomeError.C
+                        }
+                    }
+                    .catchErrorJustReturn(1)
+            }
+            .debug()
+            .subscribe()
+            .disposed(by: disposeBag)
+        
+        Observable<Int>.from([1, 2, 3, -1, 5])
+            .map { value -> Int in
+                if value > 0 {
+                    return value
+                } else {
+                    throw MyCustomeError.C
+                }
+            }
+            .catchErrorJustReturn(1)
+            .debug()
+            .subscribe()
+            .disposed(by: disposeBag)
+    }
+    
+    enum MyCustomeError:Error {
+      case  C,T
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

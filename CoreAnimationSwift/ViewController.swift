@@ -7,12 +7,20 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var goButton: UIButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print("ViewController viewDidLoad")
+       let _ = goButton.rx.controlEvent(UIControlEvents.touchUpInside)
+            .subscribe(onNext: { () in
+                print("clicked")
+            });
         // Do any additional setup after loading the view, typically from a nib.
     }
 

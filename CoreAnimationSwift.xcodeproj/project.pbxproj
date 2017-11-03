@@ -13,6 +13,7 @@
 		5DA5804C1F8F548A0098C1B0 /* KCImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA5804B1F8F548A0098C1B0 /* KCImage.swift */; };
 		5DE768E21F9D858700B8EB00 /* SWIFTREADME.md in Resources */ = {isa = PBXBuildFile; fileRef = 5DE768E11F9D858700B8EB00 /* SWIFTREADME.md */; };
 		5DFDEA521FA6F5EA0085F6EC /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DFDEA511FA6F5EA0085F6EC /* Person.m */; };
+		892F6D92D74CD51CFBEC51F2 /* Pods_CoreAnimationSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 917770B26D275301293ABAB7 /* Pods_CoreAnimationSwift.framework */; };
 		CEC94F391F89CABF00C942D9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC94F381F89CABF00C942D9 /* AppDelegate.swift */; };
 		CEC94F3B1F89CABF00C942D9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC94F3A1F89CABF00C942D9 /* ViewController.swift */; };
 		CEC94F3E1F89CABF00C942D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC94F3C1F89CABF00C942D9 /* Main.storyboard */; };
@@ -40,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		023BF03B501E08395CBAF5B6 /* Pods-CoreAnimationSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationSwift/Pods-CoreAnimationSwift.release.xcconfig"; sourceTree = "<group>"; };
 		5D7CD3941F8F32F000F16D6F /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		5DA580471F8F3E220098C1B0 /* KCImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCImageViewController.swift; sourceTree = "<group>"; };
 		5DA580491F8F3E870098C1B0 /* Icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon180.png; sourceTree = "<group>"; };
@@ -50,6 +52,8 @@
 		5DFDEA4F1FA6F5EA0085F6EC /* CoreAnimationSwift-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CoreAnimationSwift-Bridging-Header.h"; sourceTree = "<group>"; };
 		5DFDEA501FA6F5EA0085F6EC /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
 		5DFDEA511FA6F5EA0085F6EC /* Person.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
+		8F676B0DAF094330A16BDE1F /* Pods-CoreAnimationSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationSwift/Pods-CoreAnimationSwift.debug.xcconfig"; sourceTree = "<group>"; };
+		917770B26D275301293ABAB7 /* Pods_CoreAnimationSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoreAnimationSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC94F351F89CABF00C942D9 /* CoreAnimationSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoreAnimationSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC94F381F89CABF00C942D9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CEC94F3A1F89CABF00C942D9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				892F6D92D74CD51CFBEC51F2 /* Pods_CoreAnimationSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +95,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		39908576D303F53A3ACA75CC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				917770B26D275301293ABAB7 /* Pods_CoreAnimationSwift.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		5DFDEA4E1FA6F5C80085F6EC /* OC */ = {
 			isa = PBXGroup;
 			children = (
@@ -100,6 +113,15 @@
 			path = OC;
 			sourceTree = "<group>";
 		};
+		CE4F067CB0BBB3A215967B80 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8F676B0DAF094330A16BDE1F /* Pods-CoreAnimationSwift.debug.xcconfig */,
+				023BF03B501E08395CBAF5B6 /* Pods-CoreAnimationSwift.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		CEC94F2C1F89CABF00C942D9 = {
 			isa = PBXGroup;
 			children = (
@@ -107,6 +129,8 @@
 				CEC94F4C1F89CAC100C942D9 /* CoreAnimationSwiftTests */,
 				CEC94F571F89CAC100C942D9 /* CoreAnimationSwiftUITests */,
 				CEC94F361F89CABF00C942D9 /* Products */,
+				CE4F067CB0BBB3A215967B80 /* Pods */,
+				39908576D303F53A3ACA75CC /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -166,9 +190,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = CEC94F5D1F89CAC100C942D9 /* Build configuration list for PBXNativeTarget "CoreAnimationSwift" */;
 			buildPhases = (
+				1CDC8E521B19F204D487AEED /* [CP] Check Pods Manifest.lock */,
 				CEC94F311F89CABF00C942D9 /* Sources */,
 				CEC94F321F89CABF00C942D9 /* Frameworks */,
 				CEC94F331F89CABF00C942D9 /* Resources */,
+				DC11205EBB5CDE6AEF85576A /* [CP] Embed Pods Frameworks */,
+				FD3FDEBFBC3C21818DDF213A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -290,6 +317,76 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1CDC8E521B19F204D487AEED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-CoreAnimationSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DC11205EBB5CDE6AEF85576A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-CoreAnimationSwift/Pods-CoreAnimationSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FMDB/FMDB.framework",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Mantle/Mantle.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/WHTEncryption/WHTEncryption.framework",
+				"${BUILT_PRODUCTS_DIR}/WHTNetHelpers/WHTNetHelpers.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FMDB.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mantle.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WHTEncryption.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/WHTNetHelpers.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreAnimationSwift/Pods-CoreAnimationSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FD3FDEBFBC3C21818DDF213A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CoreAnimationSwift/Pods-CoreAnimationSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		CEC94F311F89CABF00C942D9 /* Sources */ = {
@@ -465,6 +562,7 @@
 		};
 		CEC94F5E1F89CAC100C942D9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8F676B0DAF094330A16BDE1F /* Pods-CoreAnimationSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -483,6 +581,7 @@
 		};
 		CEC94F5F1F89CAC100C942D9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 023BF03B501E08395CBAF5B6 /* Pods-CoreAnimationSwift.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
