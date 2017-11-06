@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D7B2A921FAFEF4D00FA645B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B2A911FAFEF4D00FA645B /* LoginViewController.swift */; };
+		5D7B2A941FAFEF8400FA645B /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7B2A931FAFEF8400FA645B /* LoginViewModel.swift */; };
 		5D7CD3951F8F32F000F16D6F /* ShowViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D7CD3941F8F32F000F16D6F /* ShowViewController.swift */; };
 		5DA580481F8F3E220098C1B0 /* KCImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5DA580471F8F3E220098C1B0 /* KCImageViewController.swift */; };
 		5DA5804A1F8F42900098C1B0 /* Icon180.png in Resources */ = {isa = PBXBuildFile; fileRef = 5DA580491F8F3E870098C1B0 /* Icon180.png */; };
@@ -42,6 +44,8 @@
 
 /* Begin PBXFileReference section */
 		023BF03B501E08395CBAF5B6 /* Pods-CoreAnimationSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoreAnimationSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoreAnimationSwift/Pods-CoreAnimationSwift.release.xcconfig"; sourceTree = "<group>"; };
+		5D7B2A911FAFEF4D00FA645B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		5D7B2A931FAFEF8400FA645B /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		5D7CD3941F8F32F000F16D6F /* ShowViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowViewController.swift; sourceTree = "<group>"; };
 		5DA580471F8F3E220098C1B0 /* KCImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KCImageViewController.swift; sourceTree = "<group>"; };
 		5DA580491F8F3E870098C1B0 /* Icon180.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon180.png; sourceTree = "<group>"; };
@@ -103,6 +107,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		5D7B2A901FAFEF1700FA645B /* RxSwiftLoginMvvmDemo */ = {
+			isa = PBXGroup;
+			children = (
+				5D7B2A911FAFEF4D00FA645B /* LoginViewController.swift */,
+				5D7B2A931FAFEF8400FA645B /* LoginViewModel.swift */,
+			);
+			path = RxSwiftLoginMvvmDemo;
+			sourceTree = "<group>";
+		};
 		5DFDEA4E1FA6F5C80085F6EC /* OC */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +160,7 @@
 		CEC94F371F89CABF00C942D9 /* CoreAnimationSwift */ = {
 			isa = PBXGroup;
 			children = (
+				5D7B2A901FAFEF1700FA645B /* RxSwiftLoginMvvmDemo */,
 				5DFDEA4E1FA6F5C80085F6EC /* OC */,
 				5DFDEA4D1FA347E00085F6EC /* SwiftOC.playground */,
 				5DE768E01F9D855E00B8EB00 /* SwiftLan.playground */,
@@ -393,9 +407,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D7B2A921FAFEF4D00FA645B /* LoginViewController.swift in Sources */,
 				5DFDEA521FA6F5EA0085F6EC /* Person.m in Sources */,
 				5DA5804C1F8F548A0098C1B0 /* KCImage.swift in Sources */,
 				CEC94F3B1F89CABF00C942D9 /* ViewController.swift in Sources */,
+				5D7B2A941FAFEF8400FA645B /* LoginViewModel.swift in Sources */,
 				CEC94F391F89CABF00C942D9 /* AppDelegate.swift in Sources */,
 				5DA580481F8F3E220098C1B0 /* KCImageViewController.swift in Sources */,
 				5D7CD3951F8F32F000F16D6F /* ShowViewController.swift in Sources */,
