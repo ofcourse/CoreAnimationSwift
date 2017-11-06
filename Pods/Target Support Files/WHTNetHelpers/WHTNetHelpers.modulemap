@@ -1,0 +1,6 @@
+framework module WHTNetHelpers {
+  umbrella header "WHTNetHelpers-umbrella.h"
+
+  export *
+  module * { export * }
+}

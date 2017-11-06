@@ -3,7 +3,7 @@
 //  CoreAnimationSwift
 //
 //  Created by hsg on 2017/11/6.
-//  Copyright © 2017年 com.zhiding8. All rights reserved.
+//  Copyright © 2017年 . All rights reserved.
 //
 
 import UIKit
