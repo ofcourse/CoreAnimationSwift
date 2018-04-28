@@ -35,10 +35,11 @@ class InSome:SomeClass {
         
     }*/
 }
-
+SomeClass.doIt()
 //https://stackoverflow.com/questions/35035185/swift-metatype-type-self
 let cls : SomeClass.Type = SomeClass.self //属于类的类方法
 cls.doIt()
+cls.nameOfPerson(name: "hugo")
 let cls2 : SomeClass = SomeClass() //实例
 cls2.doItOnlyIfInstanceOfThisType()
 
@@ -61,3 +62,36 @@ SomeClass.work()
 SomeClass.nameOfPerson(name: "static name")
 
 //static & class 类方法的区别: 都是类方法，但是static的方法不能重写，但class的可以 http://www.jianshu.com/p/a9c9e7313438
+
+public protocol TransformType {
+    associatedtype Object
+    associatedtype JSON
+    
+    func transformFromJSON(_ value: Any?) -> Object?
+    func transformToJSON(_ value: Object?) -> JSON?
+}
+
+public protocol TY {
+    associatedtype O
+    associatedtype J
+    
+    func o() -> O
+    func j() -> J
+}
+
+open class DT: TY {
+    public typealias O = Double
+    public typealias J = Int
+    
+    public func o() -> O {
+        return 10.0
+    }
+    public func j() -> J {
+        return 1
+    }
+}
+
+let d :DT = DT()
+d.o()
+d.j()
+

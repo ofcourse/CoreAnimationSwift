@@ -23,6 +23,8 @@
 		CEC94F431F89CAC000C942D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CEC94F411F89CAC000C942D9 /* LaunchScreen.storyboard */; };
 		CEC94F4E1F89CAC100C942D9 /* CoreAnimationSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC94F4D1F89CAC100C942D9 /* CoreAnimationSwiftTests.swift */; };
 		CEC94F591F89CAC100C942D9 /* CoreAnimationSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEC94F581F89CAC100C942D9 /* CoreAnimationSwiftUITests.swift */; };
+		FA60F761207B862C00BFB09A /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA60F763207B862C00BFB09A /* RxCocoa.framework */; };
+		FA60F762207B862C00BFB09A /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA60F764207B862C00BFB09A /* RxSwift.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,6 +73,8 @@
 		CEC94F541F89CAC100C942D9 /* CoreAnimationSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoreAnimationSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CEC94F581F89CAC100C942D9 /* CoreAnimationSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreAnimationSwiftUITests.swift; sourceTree = "<group>"; };
 		CEC94F5A1F89CAC100C942D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FA60F763207B862C00BFB09A /* RxCocoa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxCocoa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA60F764207B862C00BFB09A /* RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,6 +82,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA60F761207B862C00BFB09A /* RxCocoa.framework in Frameworks */,
+				FA60F762207B862C00BFB09A /* RxSwift.framework in Frameworks */,
 				892F6D92D74CD51CFBEC51F2 /* Pods_CoreAnimationSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,6 +108,8 @@
 		39908576D303F53A3ACA75CC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				FA60F763207B862C00BFB09A /* RxCocoa.framework */,
+				FA60F764207B862C00BFB09A /* RxSwift.framework */,
 				917770B26D275301293ABAB7 /* Pods_CoreAnimationSwift.framework */,
 			);
 			name = Frameworks;
